@@ -1,16 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Books from "../data/BooksData.json";
-
-type BookCardProps = {
-  Name: string;
-  Description: string;
-  Month: string
-  Year: string;
-  Author: string
-  Skip?: boolean;
-  SecondBook?: boolean; 
-};
+import { BookCard, BookCardProps } from "../components/BookCard";
+import { Description } from "../data/description";
 
 const Home: NextPage = () => {
   return (
@@ -23,9 +15,11 @@ const Home: NextPage = () => {
 
       <main className="container mx-auto flex flex-col items-center h-screen p-4">
         <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
-          Fleet <span className="text-purple-300">BookClub</span> 
+          Fleet <span className="text-purple-300">BookClub</span>
         </h1>
-        {/* <p className="text-2xl text-gray-700">This stack uses:</p> */}
+        <div className="flex flex-col md:flex-row justify-center items-center text-center pt-4 w-3/5">
+          <p>{Description}</p>
+        </div>
         <div className="grid gap-3 pt-3 mt-3 text-center md:grid-cols-1 lg:w-2/3">
           {Books.map((book: BookCardProps) => {
             return (
@@ -42,24 +36,6 @@ const Home: NextPage = () => {
         </div>
       </main>
     </>
-  );
-};
-
-const BookCard = ({ Name, Description, Author, Month , Year, Skip, SecondBook}: BookCardProps) => {
-  return (
-    <section className="flex flex-col justify-center p-6 duration-500 border-2 border-gray-500 rounded shadow-xl md:motion-safe:hover:scale-105">
-      <h1 className="text-lg text-gray-600">{Name}</h1>
-      <h2 className="text-sm text-violet-600  pb-3">{Author}</h2>
-      <p className="text-sm text-gray-600">{Description}</p>
-      <a
-        className="mt-3 text-gray-600"
-        // href={documentation}
-        target="_blank"
-        rel="noreferrer"
-      >
-        {Month} {Year}
-      </a>
-    </section>
   );
 };
 

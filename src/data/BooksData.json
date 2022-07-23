@@ -117,7 +117,7 @@
     "Author": "Lucy Foley",
     "Month": "March",
     "Year": "2021",
-    "Description": "The bride ‧ The plus one ‧ The best man ‧ The wedding planner ‧ The bridesmaid ‧ The body On an island off the coast of Ireland, guests gather to celebrate two people joining their lives together as one. The groom: handsome and charming, a rising television star. The bride: smart and ambitious, a magazine publisher. It's a wedding for a magazine, or for a celebrity: the designer dress, the remote location, the luxe party favors, the boutique whiskey. The cell phone service may be spotty and the waves may be rough, but every detail has been expertly planned and will be expertly executed. But perfection is for plans, and people are all too human. As the champagne is popped and the festivities begin, resentments and petty jealousies begin to mingle with the reminiscences and well wishes. The groomsmen begin the drinking game from their school days. The bridesmaid not-so-accidentally ruins her dress. The bride’s oldest (male) friend gives an uncomfortably caring toast. And then someone turns up dead. Who didn’t wish the happy couple well? And perhaps more important, why?"
+    "Description": "The bride ‧ The plus one ‧ The best man ‧ The wedding planner ‧ The bridesmaid ‧ The body ‧\n On an island off the coast of Ireland, guests gather to celebrate two people joining their lives together as one. The cell phone service may be spotty and the waves may be rough, but every detail has been expertly planned and will be expertly executed. Then someone turns up dead. Who didn't wish the happy couple well? And perhaps more important, why?"
   },
   {
     "Name": "The Alice Network",
@@ -213,11 +213,18 @@
     "Description": "The murder of a woman from one of the town's oldest families has Rosedale's upper crust howling for blood, and the prosecutor is counting on Ruby's inexperience to help him deliver a swift conviction. Ruby's client is a college football star who has returned home after a career-ending injury, and she is determined to build a defense that will stick." 
   },
   {
-    "Name": "Yes Man / Boy Swallows Universe",
-    "Author": "",
+    "Name": "Boy Swallows Universe",
+    "Author": "Trent Dalton",
     "Month": "Febuary",
     "Year": "2020",
-    "Description": "By day, seventeen-year-old Jo Kuan works as a lady's maid for the cruel daughter of one of the wealthiest men in Atlanta. But by night, Jo moonlights as the pseudonymous author of a newspaper advice column for the genteel Southern lady, 'Dear Miss Sweetie.' When her column becomes wildly popular, she uses the power of the pen to address some of society's ills, but she's not prepared for the backlash that follows when her column challenges fixed ideas about race and gender." 
+    "Description": "A novel of love, crime, magic, fate and coming of age, set in Brisbane's violent working class suburban fringe - from one of Australia's most exciting new writers. A story of brotherhood, true love and the most unlikely of friendships, Boy Swallows Universe will be the most heartbreaking, joyous and exhilarating novel you will read all year." 
+  },
+  {
+    "Name": "Yes Man",
+    "Author": "Danny Wallace",
+    "Month": "Febuary",
+    "Year": "2020",
+    "Description": "Recently single, Danny Wallace was falling into loneliness and isolation. When a stranger on a bus advises, Say yes more. Wallace vows to say yes to every offer, invitation, challenge, and chance. In Yes Man, Wallace recounts his months-long commitment to complete openness with profound insight and humbling honesty." 
   },
   {
     "Name": "Ender's Game",
