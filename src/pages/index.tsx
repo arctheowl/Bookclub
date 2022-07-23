@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
           Fleet <span className="text-purple-300">BookClub</span>
         </h1>
-        <div className="flex flex-col md:flex-row justify-center items-center text-center pt-4 w-3/5">
+        <div className="flex flex-col md:flex-row justify-center items-center text-center pt-4 md:w-3/5">
           <p>{Description}</p>
         </div>
         <div className="grid gap-3 pt-3 mt-3 text-center md:grid-cols-1 lg:w-2/3">
