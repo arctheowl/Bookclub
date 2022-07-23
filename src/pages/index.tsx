@@ -6,7 +6,10 @@ type BookCardProps = {
   Name: string;
   Description: string;
   Month: string
-  Author: string;
+  Year: string;
+  Author: string
+  Skip?: boolean;
+  SecondBook?: boolean; 
 };
 
 const Home: NextPage = () => {
@@ -20,7 +23,7 @@ const Home: NextPage = () => {
 
       <main className="container mx-auto flex flex-col items-center h-screen p-4">
         <h1 className="text-5xl md:text-[5rem] leading-normal font-extrabold text-gray-700">
-          Fleet <span className="text-purple-300">BookClub</span> Blog
+          Fleet <span className="text-purple-300">BookClub</span> 
         </h1>
         {/* <p className="text-2xl text-gray-700">This stack uses:</p> */}
         <div className="grid gap-3 pt-3 mt-3 text-center md:grid-cols-1 lg:w-2/3">
@@ -32,6 +35,7 @@ const Home: NextPage = () => {
                 Description={book.Description}
                 Author={book.Author}
                 Month={book.Month}
+                Year={book.Year}
               />
             );
           })}
@@ -41,19 +45,19 @@ const Home: NextPage = () => {
   );
 };
 
-const BookCard = ({ Name, Description, Author, Month }: BookCardProps) => {
+const BookCard = ({ Name, Description, Author, Month , Year, Skip, SecondBook}: BookCardProps) => {
   return (
-    <section className="flex flex-col justify-center p-6 duration-500 border-2 border-gray-500 rounded shadow-xl motion-safe:hover:scale-105">
-      <h1 className="text-lg text-gray-700">{Name}</h1>
-      <h2 className="text-sm text-gray-600 pb-3">{Author}</h2>
+    <section className="flex flex-col justify-center p-6 duration-500 border-2 border-gray-500 rounded shadow-xl md:motion-safe:hover:scale-105">
+      <h1 className="text-lg text-gray-600">{Name}</h1>
+      <h2 className="text-sm text-violet-600  pb-3">{Author}</h2>
       <p className="text-sm text-gray-600">{Description}</p>
       <a
-        className="mt-3 underline text-violet-500 decoration-dotted underline-offset-2"
+        className="mt-3 text-gray-600"
         // href={documentation}
         target="_blank"
         rel="noreferrer"
       >
-        {Month}
+        {Month} {Year}
       </a>
     </section>
   );
