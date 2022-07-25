@@ -3,6 +3,7 @@ import Head from "next/head";
 import Books from "../data/BooksData.json";
 import { BookCard, BookCardProps } from "../components/BookCard";
 import { Description } from "../data/description";
+import BasicChips from "../components/Tag";
 
 const Home: NextPage = () => {
   return (
@@ -30,13 +31,15 @@ const Home: NextPage = () => {
                 Author={book.Author}
                 Month={book.Month}
                 Year={book.Year}
+                Rating={book?.Rating}
+                Tags={book?.Tags}
                 SecondBook={book?.SecondBook}
                 SecondAuthor={book?.SecondAuthor}
                 SecondDescription={book?.SecondDescription}
               />
             );
           })}
-        </div>
+          </div>
       </main>
     </>
   );
