@@ -23,9 +23,6 @@ export const BookCard = ({
 }: BookCardProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
-  if (Description.length < 240) {
-    console.log(Description.length);
-  }
   return (
     <section className="flex flex-col justify-center p-6 duration-500 border-2 border-gray-500 rounded shadow-xl md:motion-safe:hover:scale-105">
       <button onClick={() => setIsOpen(!isOpen)}>
