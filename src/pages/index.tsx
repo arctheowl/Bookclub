@@ -30,6 +30,9 @@ const Home: NextPage = () => {
                 Author={book.Author}
                 Month={book.Month}
                 Year={book.Year}
+                SecondBook={book?.SecondBook}
+                SecondAuthor={book?.SecondAuthor}
+                SecondDescription={book?.SecondDescription}
               />
             );
           })}

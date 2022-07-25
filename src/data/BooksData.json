@@ -141,20 +141,14 @@
     "Description": "Mrs Bradley, sharp-eyed detective and celebrated psychiatrist, has decided to spend Christmas with her nephew at his beautiful house in the Cotswolds. It isn't long before a mystery unfolds. There are strange events occurring in the nearby wood and local villagers are receiving anonymous threatening letters. Then the snow begins to fall – and a body is discovered. Mrs Bradley is on the case, but she'll have to hatch an ingenious plan to reveal the truth and find the culprit…" 
   },
   {
-    "Name": "Silver Sparrow",
-    "Author": "Tayari Jones",
-    "Month": "November",
-    "Year": "2020",
-    "Description": "With the opening line of Silver Sparrow, “My father, James Witherspoon is a bigamist,” Tayari Jones unveils a breathtaking story about a man's deception, a family's complicity, and the teenage girls caught in the middle. Set in a middle-class neighborhood in Atlanta in the 1980s, the novel revolves around James Witherspoon's families, the public one and the secret one. When the daughters from each family meet and form a friendship, only one of them knows they are sisters. It is a relationship destined to explode when secrets are revealed and illusions shattered. As Jones explores the backstories of her rich and flawed characters, she also reveals the joy, and the destruction, they brought to each other's lives.",
-    "Skip": true
-  },
-  {
     "Name": "I Am Legend",
     "Author": "Richard Matheson",
     "Month": "November",
     "Year": "2020",
     "Description": "Robert Neville is the last living man on Earth . . . but he is not alone. Every other man, woman and child on the planet has become a vampire, and they are hungry for Neville's blood. By day he is the hunter, stalking the undead through the ruins of civilisation. By night, he barricades himself in his home and prays for the dawn. How long can one man survive like this?",
-    "SecondBook": true
+    "SecondBook": "Silver Sparrow",
+    "SecondAuthor": "Tayari Jones",
+    "SecondDescription": "With the opening line of Silver Sparrow, “My father, James Witherspoon is a bigamist,” Tayari Jones unveils a breathtaking story about a man's deception, a family's complicity, and the teenage girls caught in the middle. Set in a middle-class neighborhood in Atlanta in the 1980s, the novel revolves around James Witherspoon's families, the public one and the secret one. When the daughters from each family meet and form a friendship, only one of them knows they are sisters. It is a relationship destined to explode when secrets are revealed and illusions shattered. As Jones explores the backstories of her rich and flawed characters, she also reveals the joy, and the destruction, they brought to each other's lives."
   },
   {
     "Name": "The Bazzar of Bad Dreams",
@@ -213,18 +207,15 @@
     "Description": "The murder of a woman from one of the town's oldest families has Rosedale's upper crust howling for blood, and the prosecutor is counting on Ruby's inexperience to help him deliver a swift conviction. Ruby's client is a college football star who has returned home after a career-ending injury, and she is determined to build a defense that will stick." 
   },
   {
-    "Name": "Boy Swallows Universe",
-    "Author": "Trent Dalton",
-    "Month": "Febuary",
-    "Year": "2020",
-    "Description": "A novel of love, crime, magic, fate and coming of age, set in Brisbane's violent working class suburban fringe - from one of Australia's most exciting new writers. A story of brotherhood, true love and the most unlikely of friendships, Boy Swallows Universe will be the most heartbreaking, joyous and exhilarating novel you will read all year." 
-  },
-  {
     "Name": "Yes Man",
     "Author": "Danny Wallace",
     "Month": "Febuary",
     "Year": "2020",
-    "Description": "Recently single, Danny Wallace was falling into loneliness and isolation. When a stranger on a bus advises, Say yes more. Wallace vows to say yes to every offer, invitation, challenge, and chance. In Yes Man, Wallace recounts his months-long commitment to complete openness with profound insight and humbling honesty." 
+    "Description": "Recently single, Danny Wallace was falling into loneliness and isolation. When a stranger on a bus advises, Say yes more. Wallace vows to say yes to every offer, invitation, challenge, and chance. In Yes Man, Wallace recounts his months-long commitment to complete openness with profound insight and humbling honesty.",
+    "SecondBook": "Boy Swallows Universe",
+    "SecondAuthor": "Trent Dalton",
+    "SecondDescription": "A novel of love, crime, magic, fate and coming of age, set in Brisbane's violent working class suburban fringe - from one of Australia's most exciting new writers. A story of brotherhood, true love and the most unlikely of friendships, Boy Swallows Universe will be the most heartbreaking, joyous and exhilarating novel you will read all year." 
+ 
   },
   {
     "Name": "Ender's Game",
