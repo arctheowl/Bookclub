@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import Rating from "@mui/material/Rating";
 import Typography from "@mui/material/Typography";
 
@@ -10,13 +9,9 @@ export default function BasicRating({ value }: IRatingProps) {
     return <></>;
   }
   return (
-    <Box
-      sx={{
-        "& > legend": { mt: 2 },
-      }}
-    >
+    <div className="flex-col flex justify-center items-center text-center">
       <Typography component="legend">Rating</Typography>
       <Rating name="read-only" value={value} readOnly />
-    </Box>
+    </div>
   );
 }
