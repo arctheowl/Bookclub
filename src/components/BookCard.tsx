@@ -32,7 +32,7 @@ export const BookCard = ({
 
   return (
     <>
-      <section className="flex flex-col justify-center p-6 duration-500 border-2 border-gray-500 rounded shadow-xl md:motion-safe:hover:scale-105">
+      <section className="flex flex-col justify-center p-6 duration-500 animate-fade-up border-2 border-gray-500 rounded shadow-xl md:motion-safe:hover:scale-105">
         <button onClick={() => setIsOpen(!isOpen)}>
           <h1 className="text-lg text-gray-600">{Name}</h1>
 
@@ -44,6 +44,7 @@ export const BookCard = ({
               {Description.slice(0, 240)}...
             </p>
           )}
+          
           {Description.length < 240 || isOpen ? <></> : <p>See more</p>}
         </button>
 
