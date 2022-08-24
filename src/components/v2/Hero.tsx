@@ -10,7 +10,7 @@ const Hero = () => {
       <h1 className="opacitiy-100 text-5xl absolute w-80 text-center -mt-36 md:-mt-0">
         Welcome to <span className="text-purple-300"> Fleet BookClub</span>
       </h1>
-      <p className="opacitiy-100 absolute md:mt-48 mt-40 text-center md:w-2/3 px-5">
+      <p className="opacitiy-100 absolute md:mt-56 mt-40 text-center md:w-5/12 px-5">
         {Description}
       </p>
     </div>
