@@ -12,6 +12,13 @@ function defineNextConfig(config) {
   return config;
 }
 
+const nextConfig = {
+  reactStrictMode: true,
+  images: {
+    domains: ['external-content.duckduckgo.com'],
+},
+}
+
 export default defineNextConfig({
   reactStrictMode: true,
 });
