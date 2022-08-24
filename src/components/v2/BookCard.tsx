@@ -19,7 +19,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
         <div
           className={`md:flex md:flex-col md:justify-center md:relative border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 hover:-translate-y-5 duration-500 grid grid-cols-4 md:gap-4`}
         >
-          <div className="relative h-32 self-center ml-5  w-full md:h-full md:absolute">
+          <div className="relative h-32 self-center ml-5 md:ml-0 w-full md:h-full md:absolute">
             <button onClick={() => setOpen(!open)}>
               <Image
                 src={image}
@@ -50,7 +50,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
       ) : (
         <div className="relative overflow-hidden hover:-translate-y-5 duration-500">
           <button onClick={() => setOpen(!open)}>
-            <div className="absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-xl text-[.75rem]">
+            <div className="absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-xl text-[.75rem] hover:animate-pulse">
               {month} {year}
             </div>
             <Image

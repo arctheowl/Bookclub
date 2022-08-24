@@ -7,6 +7,7 @@ const BookSection = (props: Props) => {
   return (
     <div className="w-screen grid md:grid-cols-4 grid-cols-2 gap-4 md:gap-y-8 p-10 bg-[#e3e2de]">
       {data.map((book) => {
+        console.log('s')
         return (
           <BookCard
             key={book.Name}
