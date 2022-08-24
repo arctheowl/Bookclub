@@ -50,7 +50,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
       ) : (
         <div className="relative overflow-hidden hover:-translate-y-5 duration-500">
           <button onClick={() => setOpen(!open)}>
-            <div className="absolute z-10 bg-purple-300 rounded-r-xl px-5 md:text-xl rounded-tl-xl">
+            <div className="absolute z-10 bg-purple-300 rounded-r-xl pr-2 pl-1 md:text-xl rounded-tl-xl text-[.75rem]">
               {month} {year}
             </div>
             <Image
