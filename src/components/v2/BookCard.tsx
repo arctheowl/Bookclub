@@ -17,7 +17,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
     <>
       {open ? (
         <div
-          className={`md:flex md:flex-col md:justify-center md:relative border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 hover:-translate-y-5 duration-500 grid grid-cols-2 gap-4`}
+          className={`md:flex md:flex-col md:justify-center md:relative border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 hover:-translate-y-5 duration-500 grid grid-cols-2 md:gap-4`}
         >
           <div className="relative h-72 w-full md:h-full md:absolute">
             <button onClick={() => setOpen(!open)}>
@@ -34,11 +34,11 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
 
           <div className="relative p-10 text-center">
             <button onClick={() => setOpen(!open)}>
-              <h1 className="text-lg text-violet-600 md:py-0">
+              <h1 className="text-md md:text-lg text-violet-600 py-0">
                 {month} {year}
               </h1>
-              <h1 className="text-2xl text-gray-600 py-5 md:py-0">{title}</h1>
-              <h2 className="text-lg text-violet-600 pb-3 md:py-0">{author}</h2>
+              <h1 className="text-lg md:text-2xl text-gray-600 py-2">{title}</h1>
+              <h2 className="text-md md:text-lg text-violet-600 pb-3 py-0">{author}</h2>
             </button>
           </div>
           <div className="px-5 pb-5 col-span-2">
