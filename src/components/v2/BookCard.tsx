@@ -32,16 +32,16 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
             </button>
           </div>
 
-          <div className="relative p-10">
+          <div className="relative p-10 text-center">
             <button onClick={() => setOpen(!open)}>
-              <h1 className="text-lg text-violet-600 py-2 md:py-0">
+              <h1 className="text-lg text-violet-600 md:py-0">
                 {month} {year}
               </h1>
               <h1 className="text-2xl text-gray-600 py-5 md:py-0">{title}</h1>
-              <h2 className="text-lg text-violet-600 pb-3 py-2 md:py-0">{author}</h2>
+              <h2 className="text-lg text-violet-600 pb-3 md:py-0">{author}</h2>
             </button>
           </div>
-          <div className="p-10 col-span-2">
+          <div className="px-5 pb-5 col-span-2">
             <button onClick={() => setOpen(!open)}>
               <p className="text-sm text-gray-600 ">{desc}</p>
             </button>
@@ -50,7 +50,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
       ) : (
         <div className="relative overflow-hidden hover:-translate-y-5 duration-500">
           <button onClick={() => setOpen(!open)}>
-            <div className="absolute z-10 bg-purple-300 rounded-r-xl px-5 text-xl rounded-tl-xl">
+            <div className="absolute z-10 bg-purple-300 rounded-r-xl px-5 md:text-xl rounded-tl-xl">
               {month} {year}
             </div>
             <Image
