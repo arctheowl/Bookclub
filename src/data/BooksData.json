@@ -177,10 +177,15 @@
     "Month": "November",
     "Year": "2020",
     "Image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.reelybored.com%2Fwp-content%2Fuploads%2F2020%2F02%2Fbook-review-blog-imlegend.jpg&f=1&nofb=1",
-    "Description": "Robert Neville is the last living man on Earth . . . but he is not alone. Every other man, woman and child on the planet has become a vampire, and they are hungry for Neville's blood. By day he is the hunter, stalking the undead through the ruins of civilisation. By night, he barricades himself in his home and prays for the dawn. How long can one man survive like this?",
-    "SecondBook": "Silver Sparrow",
-    "SecondAuthor": "Tayari Jones",
-    "SecondDescription": "With the opening line of Silver Sparrow, “My father, James Witherspoon is a bigamist,” Tayari Jones unveils a breathtaking story about a man's deception, a family's complicity, and the teenage girls caught in the middle. Set in a middle-class neighborhood in Atlanta in the 1980s, the novel revolves around James Witherspoon's families, the public one and the secret one. When the daughters from each family meet and form a friendship, only one of them knows they are sisters. It is a relationship destined to explode when secrets are revealed and illusions shattered. As Jones explores the backstories of her rich and flawed characters, she also reveals the joy, and the destruction, they brought to each other's lives."
+    "Description": "Robert Neville is the last living man on Earth . . . but he is not alone. Every other man, woman and child on the planet has become a vampire, and they are hungry for Neville's blood. By day he is the hunter, stalking the undead through the ruins of civilisation. By night, he barricades himself in his home and prays for the dawn. How long can one man survive like this?"
+  },
+  {
+    "Name": "Silver Sparrow",
+    "Author": "Tayari Jones",
+    "Month": "November",
+    "Year": "2020",
+    "Image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.penguin.com.au%2Fcovers%2Foriginal%2F9781760895273.jpg&f=1&nofb=1",
+    "Description": "With the opening line of Silver Sparrow, “My father, James Witherspoon is a bigamist,” Tayari Jones unveils a breathtaking story about a man's deception, a family's complicity, and the teenage girls caught in the middle. Set in a middle-class neighborhood in Atlanta in the 1980s, the novel revolves around James Witherspoon's families, the public one and the secret one. When the daughters from each family meet and form a friendship, only one of them knows they are sisters. It is a relationship destined to explode when secrets are revealed and illusions shattered. As Jones explores the backstories of her rich and flawed characters, she also reveals the joy, and the destruction, they brought to each other's lives."
   },
   {
     "Name": "The Bazzar of Bad Dreams",
@@ -228,7 +233,7 @@
     "Month": "May",
     "Year": "2020",
     "Image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.allenandunwin.com.s3.amazonaws.com%2Fimages%2Foriginal%2F9780571334650.jpg&f=1&nofb=1",
-    "Description": "At school Connell and Marianne pretend not to know each other. He's popular and well-adjusted, star of the school soccer team while she is lonely, proud, and intensely private. But when Connell comes to pick his mother up from her housekeeping job at Marianne’s house, a strange and indelible connection grows between the two teenagers - one they are determined to conceal."
+    "Description": "At school Connell and Marianne pretend not to know each other. He's popular and well-adjusted, star of the school soccer team while she is lonely, proud, and intensely private. But when Connell comes to pick his mother up from her housekeeping job at Marianne's house, a strange and indelible connection grows between the two teenagers - one they are determined to conceal."
   },
   {
     "Name": "The Lovely Bones",
@@ -252,10 +257,15 @@
     "Month": "Febuary",
     "Year": "2020",
     "Image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd28hgpri8am2if.cloudfront.net%2Fbook_images%2Fonix%2Fcvr9781439107294%2Fyes-man-9781439107294_xlg.jpg&f=1&nofb=1",
-    "Description": "Recently single, Danny Wallace was falling into loneliness and isolation. When a stranger on a bus advises, Say yes more. Wallace vows to say yes to every offer, invitation, challenge, and chance. In Yes Man, Wallace recounts his months-long commitment to complete openness with profound insight and humbling honesty.",
-    "SecondBook": "Boy Swallows Universe",
-    "SecondAuthor": "Trent Dalton",
-    "SecondDescription": "A novel of love, crime, magic, fate and coming of age, set in Brisbane's violent working class suburban fringe - from one of Australia's most exciting new writers. A story of brotherhood, true love and the most unlikely of friendships, Boy Swallows Universe will be the most heartbreaking, joyous and exhilarating novel you will read all year."
+    "Description": "Recently single, Danny Wallace was falling into loneliness and isolation. When a stranger on a bus advises, Say yes more. Wallace vows to say yes to every offer, invitation, challenge, and chance. In Yes Man, Wallace recounts his months-long commitment to complete openness with profound insight and humbling honesty."
+  },
+  {
+    "Name": "Boy Swallows Universe",
+    "Author": "Trent Dalton",
+    "Month": "Febuary",
+    "Year": "2020",
+    "Image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.thegospelcoalition.org%2Fwp-content%2Fuploads%2Fsites%2F3%2F2020%2F05%2F19110016%2F9781460753897.jpg&f=1&nofb=1",
+    "Description": "A novel of love, crime, magic, fate and coming of age, set in Brisbane's violent working class suburban fringe - from one of Australia's most exciting new writers. A story of brotherhood, true love and the most unlikely of friendships, Boy Swallows Universe will be the most heartbreaking, joyous and exhilarating novel you will read all year."
   },
   {
     "Name": "Ender's Game",
