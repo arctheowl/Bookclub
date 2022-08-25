@@ -17,7 +17,7 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
     <>
       {open ? (
         <div
-          className={`md:flex md:flex-col md:justify-center md:relative border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 hover:-translate-y-5 duration-500 grid grid-cols-4 md:gap-4`}
+          className={`md:flex md:flex-col md:justify-center md:relative border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 hover:-translate-y-5 duration-300 grid grid-cols-4 md:mr-12`}
         >
           <div className="relative h-32 self-center ml-5 md:ml-0 w-full md:h-full md:absolute">
             <button onClick={() => setOpen(!open)}>

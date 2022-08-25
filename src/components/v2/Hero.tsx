@@ -8,8 +8,8 @@ const Hero = () => {
     >
       <div className="bg-black opacity-50 h-full w-full absolute"></div>
       <div className="flex flex-col text-center justify-center items-center absolute gap-2 font-serif">
-        <h1 className="text-4xl md:text-6xl text-center ">Welcome to</h1>
-        <h1 className="opacitiy-100 text-4xl md:text-6xl text-purple-300">
+        <h1 className="text-4xl md:text-6xl text-center font-serif">Welcome to</h1>
+        <h1 className="opacitiy-100 text-4xl md:text-6xl text-purple-300 font-serif">
           Fleet Book Club
         </h1>
         <p className="opacitiy-100 text-center md:w-5/12 md:text-lg text-sm p-8 font-sans">
