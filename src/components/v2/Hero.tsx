@@ -1,4 +1,5 @@
 import { Description } from "../../data/description";
+import Date from "../../data/nextMeeting.json"
 
 const Hero = () => {
   return (
@@ -14,6 +15,9 @@ const Hero = () => {
         </h1>
         <p className="opacitiy-100 text-center md:w-5/12 md:text-lg text-sm p-8 font-sans">
           {Description}
+        </p>
+        <p className="text-xl md:text-2xl text-center font-serif text-gray-100">
+          Our next meeting: {Date}
         </p>
 
       </div>

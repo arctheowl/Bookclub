@@ -46,14 +46,12 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
             width={400}
             height={600}
             layout={open ? "fill" : "responsive"}
-            className={`rounded-2xl  ${open ? "md:opacity-10" : ""}`}
+            className={`rounded-2xl  ${open ? "md:opacity-5" : ""}`}
           />
         </div>
         {open ? (
           <>
-            <div
-              className={`relative p-10 text-center col-span-3 md:self-center`}
-            >
+            <div className={`relative p-10 col-span-3 text-center md:self-center`}>
               <h1 className={`text-md md:text-lg text-violet-600 py-0`}>
                 {month} {year}
               </h1>
@@ -64,8 +62,13 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
                 {author}
               </h2>
             </div>
-            <button  onClick={() => setDescOpen(!descOpen)} className={`px-5 pb-5 col-span-4 z-10`}>
-              <p className="text-sm text-gray-600 ">{desc}</p>
+            <button
+              onClick={() => setDescOpen(!descOpen)}
+              className={`px-5 pb-5 col-span-4 z-10`}
+            >
+              <p className="text-sm text-gray-700 ">
+                {desc.length > 400 ? `${desc.slice(0, 400)}...` : desc}
+              </p>
             </button>
           </>
         ) : (
