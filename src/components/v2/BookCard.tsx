@@ -19,22 +19,25 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
     <>
       {open ? (
         <Modal title={title} close={setOpen}>
-          <div className="grid gap-8 grid-cols-6">
-            <div className="col-span-1">
-            <Image
+          <div className="md:grid md:gap-8 md:grid-cols-6">
+            <div className="md:col-span-2">
+              <div className="flex opacity-10 absolute -z-10 h-full w-full -translate-x-4 -translate-y-8 md:translate-x-0 md:translate-y-0 md:relative md:opacity-100">
+              <Image
               src={image}
               alt={title}
               width={400}
               height={600}
-              layout={"fixed"}
+              layout={"intrinsic"}
               className={`rounded-2xl`}
             />
+              </div> 
+           
             </div>
          <div className="col-start-3 flex-col col-span-6 gap-8 p-10">
-          <h1 className=" text-3xl">{title}</h1>
-          <p className="pt-10 text-xl text-purple-600">{author}</p>
-          <p className="pt-10 text-xl">{desc}</p>
-          <p className="pt-10 text-xl text-purple-600">{month + ' ' +  year}</p>
+          <h1 className="text-2xl md:text-3xl">{title}</h1>
+          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{author}</p>
+          <p className="md:pt-10 pt-5 md:text-xl w-full">{desc}</p>
+          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{month + ' ' +  year}</p>
          </div>
         
        
