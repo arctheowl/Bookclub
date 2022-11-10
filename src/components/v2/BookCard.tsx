@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
+import Modal from '../modal'
+import Card from '../Card'
 
 type Props = {
   title: string;
@@ -12,69 +14,62 @@ type Props = {
 
 const BookCard = ({ title, image, author, desc, month, year }: Props) => {
   const [open, setOpen] = useState(false);
-  const [descOpen, setDescOpen] = useState(false);
 
   return (
     <>
-      <button
-        onClick={() => setOpen(!open)}
-        className={`  duration-300 ${
-          open
-            ? "border-2 border-gray-800 rounded-3xl col-span-2 md:col-span-1 md:flex md:flex-col md:justify-center md:relative grid grid-cols-4"
-            : "col-span-1"
-        }`}
-      >
-        <div
-          className={`${
-            open
-              ? "opacitiy-50 relative h-32 self-center ml-5 md:ml-0 w-full md:h-full md:absolute"
-              : "relative overflow-hidden duration-500"
-          }`}
-        >
-          <div
+      {open ? (
+        <Modal title={title} close={setOpen}>
+          <div className="md:grid md:gap-8 md:grid-cols-6">
+            <div className="md:col-span-2">
+              <div className="flex opacity-10 absolute -z-10 h-full w-full -translate-x-4 -translate-y-8 md:translate-x-0 md:translate-y-0 md:relative md:opacity-100">
+              <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={600}
+              layout={"intrinsic"}
+              className={`rounded-2xl`}
+            />
+              </div> 
+           
+            </div>
+         <div className="col-start-3 flex-col col-span-6 gap-8 p-10">
+          <h1 className="text-2xl md:text-3xl">{title}</h1>
+          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{author}</p>
+          <p className="md:pt-10 pt-5 md:text-xl w-full">{desc}</p>
+          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{month + ' ' +  year}</p>
+         </div>
+        
+       
+          </div>
+       
+        </Modal>
+      ) : (
+        <Card>
+         <button onClick={() => setOpen(!open)}>
+         <div
             className={` ${
               open
-                ? "invisible absolute  h-0"
-                : "absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-xl text-[.75rem] hover:animate-pulse col-span-4"
+                ? "invisible absolute h-0"
+                : "absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-md text-[.75rem] hover:animate-pulse col-span-4"
             }`}
           >
             {month} {year}
           </div>
-          <Image
-            src={image}
-            alt={title}
-            width={400}
-            height={600}
-            layout={open ? "fill" : "responsive"}
-            className={`rounded-2xl  ${open ? "md:opacity-5" : ""}`}
-          />
-        </div>
-        {open ? (
-          <>
-            <div className={`relative p-10 col-span-3 text-center md:self-center`}>
-              <h1 className={`text-md md:text-lg text-violet-600 py-0`}>
-                {month} {year}
-              </h1>
-              <h1 className="text-lg md:text-2xl text-gray-600 py-2">
-                {title}
-              </h1>
-              <h2 className="text-md md:text-lg text-violet-600 pb-3 py-0">
-                {author}
-              </h2>
-            </div>
-            <button
-              onClick={() => setDescOpen(!descOpen)}
-              className={`px-5 pb-5 col-span-4 z-10`}
-            >
-              <p className="text-sm text-gray-700 ">
-                {desc.length > 400 ? `${desc.slice(0, 400)}...` : desc}
-              </p>
-            </button>
-          </>
-        ) : (
-          ""
-        )}
-      </button>
+ 
+            <Image
+              src={image}
+              alt={title}
+              width={400}
+              height={600}
+              layout={"intrinsic"}
+              className={`rounded-md`}
+            />
+
+          </button>
+         
+        </Card>
+      )}
     </>
   );
 };
