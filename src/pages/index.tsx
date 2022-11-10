@@ -5,7 +5,7 @@ import { Description } from "../data/description";
 
 const v2 = () => {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen ">
       <Head>
         <title>Fleet Bookclub</title>
         <meta name="description" content={Description} />
