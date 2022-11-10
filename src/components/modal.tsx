@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import { Transition } from "@headlessui/react";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Modal({ children, title, close }: any) {
   const [open, setOpen] = useState(true);
 
