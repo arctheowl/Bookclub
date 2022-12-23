@@ -16,7 +16,7 @@ const BookSection = (props: Props) => {
             desc={book.Description}
             month={book.Month}
             year={book.Year}
-            rating={book.Rating}
+            // rating={book.Rating}
           />
         );
       })}
