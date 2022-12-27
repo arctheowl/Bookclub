@@ -51,7 +51,7 @@ const BookCard = ({
                 <div
                   className="absolute right-4 top-4 w-12 h-12 md:right-5 md:top-5 md:w-24 md:h-24 flex items-center justify-center"
                 >
-                  <BsStarFill className="text-yellow-500 md:text-8xl md:text-opacity-80 z-0 absolute h-12 w-12" />
+                  <BsStarFill className="text-yellow-500 md:text-8xl md:text-opacity-80 z-0 absolute h-12 w-12 md:w-24 md:h-24" />
                   <p className="md:font-bold md:text-xl z-10">{rating}</p>
                 </div>
               )}
