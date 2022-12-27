@@ -49,10 +49,10 @@ const BookCard = ({
             <div className="col-start-3 flex-col col-span-6 gap-4 p-10">
               {rating > 1 && (
                 <div
-                  className="absolute right-5 top-5 w-24 h-24 flex items-center justify-center"
+                  className="absolute right-4 top-4 w-12 h-12 md:right-5 md:top-5 md:w-24 md:h-24 flex items-center justify-center"
                 >
-                  <BsStarFill className="text-yellow-500 text-8xl text-opacity-80 z-0 absolute inset-0" />
-                  <p className="font-bold text-xl z-10">{rating}</p>
+                  <BsStarFill className="text-yellow-500 md:text-8xl md:text-opacity-80 z-0 absolute h-12 w-12" />
+                  <p className="md:font-bold md:text-xl z-10">{rating}</p>
                 </div>
               )}
 
