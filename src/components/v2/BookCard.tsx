@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
-import Modal from '../modal'
-import Card from '../Card'
+import Modal from "../modal";
+import Card from "../Card";
+import { BsStarFill } from "react-icons/bs";
 
 type Props = {
   title: string;
@@ -10,10 +11,20 @@ type Props = {
   desc: string;
   month: string;
   year: string;
+  rating: number;
 };
 
-const BookCard = ({ title, image, author, desc, month, year }: Props) => {
+const BookCard = ({
+  title,
+  image,
+  author,
+  desc,
+  month,
+  year,
+  rating,
+}: Props) => {
   const [open, setOpen] = useState(false);
+
 
   return (
     <>
@@ -22,41 +33,54 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
           <div className="md:grid md:gap-8 md:grid-cols-6">
             <div className="md:col-span-2">
               <div className="flex opacity-10 absolute -z-10 h-full w-full -translate-x-4 -translate-y-8 md:translate-x-0 md:translate-y-0 md:relative md:opacity-100">
-              <Image
-              src={image}
-              alt={title}
-              width={400}
-              height={600}
-              layout={"intrinsic"}
-              className={`rounded-2xl`}
-            />
-              </div> 
-           
+                <Image
+                  src={image}
+                  alt={title}
+                  width={400}
+                  height={600}
+                  layout={"intrinsic"}
+                  className={`rounded-2xl`}
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                />
+              </div>
             </div>
-         <div className="col-start-3 flex-col col-span-6 gap-8 p-10">
-          <h1 className="text-2xl md:text-3xl">{title}</h1>
-          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{author}</p>
-          <p className="md:pt-10 pt-5 md:text-xl w-full">{desc}</p>
-          <p className="md:pt-10 pt-5 md:text-xl text-purple-600">{month + ' ' +  year}</p>
-         </div>
-        
-       
+            <div className="col-start-3 flex-col col-span-6 gap-4 p-10">
+              {rating > 1 && (
+                <div
+                  className="absolute right-5 top-5 w-24 h-24 flex items-center justify-center"
+                >
+                  <BsStarFill className="text-yellow-500 text-8xl text-opacity-80 z-0 absolute inset-0" />
+                  <p className="font-bold text-xl z-10">{rating}</p>
+                </div>
+              )}
+
+              <h1 className="text-2xl md:text-3xl md:w-11/12">{title}</h1>
+              <p className="md:pb-8 pt-5 md:text-xl text-purple-600 md:w-11/12">
+                {author}
+              </p>
+
+              <p className="md:pt-10 pt-5 md:text-xl w-full">{desc}</p>
+              <p className="md:pt-10 pt-5 md:text-xl text-purple-600">
+                {month + " " + year}
+              </p>
+            </div>
           </div>
-       
         </Modal>
       ) : (
         <Card>
-         <button onClick={() => setOpen(!open)}>
-         <div
-            className={` ${
-              open
-                ? "invisible absolute h-0"
-                : "absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-md text-[.75rem] hover:animate-pulse col-span-4"
-            }`}
-          >
-            {month} {year}
-          </div>
- 
+          <button onClick={() => setOpen(!open)}>
+            <div
+              className={` ${
+                open
+                  ? "invisible absolute h-0"
+                  : "absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-md text-[.75rem] hover:animate-pulse col-span-4"
+              }`}
+            >
+              {month} {year}
+            </div>
+
             <Image
               src={image}
               alt={title}
@@ -64,10 +88,11 @@ const BookCard = ({ title, image, author, desc, month, year }: Props) => {
               height={600}
               layout={"intrinsic"}
               className={`rounded-md`}
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             />
-
           </button>
-         
         </Card>
       )}
     </>
