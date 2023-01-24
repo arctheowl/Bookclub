@@ -32,9 +32,6 @@ export default function Modal({ children, title, close }: any) {
             >
               <div className="transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:w-full md:max-w-7xl sm:p-6 w-screen">
                 <div className="mt-3 text-center sm:mt-5">
-                  {/* <h1 className="text-lg font-medium leading-6 text-gray-900">
-                    {title}
-                  </h1> */}
                   <div className="mt-2">{children}</div>
                 </div>
 
