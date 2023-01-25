@@ -1,7 +1,11 @@
+const colors = require('tailwindcss/colors')
 
-  const colors = require('tailwindcss/colors')
+/** @type {import('next').NextConfig} */
 
 module.exports = {
+  experimental: {
+    appDir: true,
+  },
 
   images: {
     domains: ['external-content.duckduckgo.com', "images.unsplash.com"],

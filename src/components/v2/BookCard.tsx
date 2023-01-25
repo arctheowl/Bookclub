@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import { useState } from "react";
 import Modal from "../modal";
@@ -25,7 +27,6 @@ const BookCard = ({
 }: Props) => {
   const [open, setOpen] = useState(false);
 
-
   return (
     <>
       {open ? (
@@ -38,7 +39,6 @@ const BookCard = ({
                   alt={title}
                   width={400}
                   height={600}
-                  layout={"intrinsic"}
                   className={`rounded-2xl`}
                 />
               </div>
@@ -66,24 +66,13 @@ const BookCard = ({
           </div>
         </Modal>
       ) : (
-        <Card>
+        <Card month={month} year={year}>
           <button onClick={() => setOpen(!open)}>
-            <div
-              className={` ${
-                open
-                  ? "invisible absolute h-0"
-                  : "absolute z-10 bg-purple-300 rounded-br-xl pr-2 pl-1 md:text-xl rounded-tl-md text-[.75rem] hover:animate-pulse col-span-4"
-              }`}
-            >
-              {month} {year}
-            </div>
-
+            
             <Image
               src={image}
               alt={title}
-              width={400}
-              height={600}
-              layout={"intrinsic"}
+              fill
               className={`rounded-md`}
             />
           </button>
