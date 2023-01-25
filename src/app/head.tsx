@@ -4,7 +4,7 @@ export default function Head() {
   return (
     <>
       <title>Fleet Bookclub</title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" content={Description} />
+      <meta name="viewport" content={Description} />
       <link rel="icon" href="/favicon.ico" />
     </>
   )
