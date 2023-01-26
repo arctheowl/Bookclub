@@ -6,7 +6,7 @@ export default function Modal({ children, title, close }: any) {
 
   return (
     <Transition.Root show={open} as={Fragment}>
-      <div className="relative z-20">
+      <div className="relative z-20 h-96">
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"

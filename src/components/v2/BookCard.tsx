@@ -37,8 +37,7 @@ const BookCard = ({
                 <Image
                   src={image}
                   alt={title}
-                  width={400}
-                  height={600}
+                  fill
                   className={`rounded-2xl`}
                 />
               </div>
@@ -68,7 +67,6 @@ const BookCard = ({
       ) : (
         <Card month={month} year={year}>
           <button onClick={() => setOpen(!open)}>
-            
             <Image
               src={image}
               alt={title}
